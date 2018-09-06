@@ -1,0 +1,72 @@
+<style type="text/css">
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFAFA;
+    font-size: 20px;
+
+}
+h1, h2, h3, h4{
+    text-align: center;
+    color: #30372F;
+    font-family: 'Montserrat', sans-serif;
+}
+h5{
+    color: #30372F;
+    font-family: 'Montserrat', sans-serif;
+    float: left;
+}
+.tabla {
+    width: 99%;
+    border-radius: 10px;
+    border: solid #00008B;
+
+}
+.fecha{
+    text-align: center;
+    background-color: #009E49;
+    color: #F1F8E0;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.abajo {
+    background-color: #002868;
+    color: #F1F8E0;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+.textos{
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+</style>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <script>
+        function soloNumeros(e) {
+            var key = window.Event ? e.which : e.keyCode
+            return (key >= 48 && key <= 57 || key == 08 || key == 00)
+        }
+    </script>
+
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <div class="col-md-12"> <center><img src="imagenes/logo.png" /></center>
+      <br><br>
+      <h3> HOLA MUNDO X 3 </h3>
+    <table class="tabla">
+    <tr>
+     <th class="abajo"> AGREGA UN NUMERITO  <input type="text" class="textos" onkeypress='return soloNumeros(event)' required> </th> </tr>
+    </table>
+    </form>
+    <button class="btn btn-primary" >CONSULTAR</button>
+    <button class="btn btn-warning" href="indexAdmin.aspx" >REGRESAR</button>
+</body>
+</html>
